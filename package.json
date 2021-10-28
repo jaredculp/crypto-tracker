@@ -1,0 +1,25 @@
+{
+  "name": "crypto-tracker",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "4.16.3",
+    "dotenv": "10.0.0",
+    "got": "^11.8.2",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.175",
+    "@types/node": "16.10.5",
+    "prettier": "2.4.1",
+    "typescript": "4.4.4"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "yarn tsc && yarn prettier --write src/",
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "type-check": "tsc --noEmit"
+  }
+}
